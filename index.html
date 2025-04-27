@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | Product list with cart</title>
+  <script src="https://kit.fontawesome.com/cdbdae0066.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+  <section class="shop wrapper section-padding">
+    <div class="shop__content">
+      <h1 class="shop__title">Desserts</h1>
+      <div class="shop__products">
+
+        <div class="shop__product">
+          <picture>
+            <source srcset="./assets/images/image-waffle-mobile.jpg" media="(max-width: 768px)">
+            <img src="./assets/images/image-waffle-desktop.jpg" width="502" height="480" loading="lazy"
+              alt="Waffle with Berries">
+          </picture>
+          <button class="shop__product-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" fill="none"
+              viewBox="0 0 21 20">
+              <g fill="#C73B0F" clip-path="url(#a)">
+                <path
+                  d="M6.583 18.75a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5ZM15.334 18.75a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5ZM3.446 1.752a.625.625 0 0 0-.613-.502h-2.5V2.5h1.988l2.4 11.998a.625.625 0 0 0 .612.502h11.25v-1.25H5.847l-.5-2.5h11.238a.625.625 0 0 0 .61-.49l1.417-6.385h-1.28L16.083 10H5.096l-1.65-8.248Z" />
+                <path d="M11.584 3.75v-2.5h-1.25v2.5h-2.5V5h2.5v2.5h1.25V5h2.5V3.75h-2.5Z" />
+              </g>
+              <defs>
+                <clipPath id="a">
+                  <path fill="#fff" d="M.333 0h20v20h-20z" />
+                </clipPath>
+              </defs>
+            </svg> Add to Cart
+          </button>
+          <div class="shop__product-toggler hidden"><button class="shop__product-remove-btn"><i class="fa-solid fa-minus"></i></button> <p class="shop__product-amount" data-amount="1"></p> <button class="shop__product-add-btn"><i class="fa-solid fa-plus"></i></button></div>
+          <p class="shop__product-text">Waffle</p>
+          <p class="shop__product-name">Waffle with Berries</p>
+          <p class="shop__product-price">$6.50</p>
+        </div>
+
+        <div class="shop__product">
+          <picture>
+            <source srcset="./assets/images/image-creme-brulee-mobile.jpg" media="(max-width: 768px)">
+            <img src="./assets/images/image-creme-brulee-desktop.jpg" width="502" height="480" loading="lazy"
+              alt="Vanilla Bean Crème Brûlée">
+          </picture>
+          <button class="shop__product-btn"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" fill="none"
+              viewBox="0 0 21 20">
+              <g fill="#C73B0F" clip-path="url(#a)">
+                <path
+                  d="M6.583 18.75a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5ZM15.334 18.75a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5ZM3.446 1.752a.625.625 0 0 0-.613-.502h-2.5V2.5h1.988l2.4 11.998a.625.625 0 0 0 .612.502h11.25v-1.25H5.847l-.5-2.5h11.238a.625.625 0 0 0 .61-.49l1.417-6.385h-1.28L16.083 10H5.096l-1.65-8.248Z" />
+                <path d="M11.584 3.75v-2.5h-1.25v2.5h-2.5V5h2.5v2.5h1.25V5h2.5V3.75h-2.5Z" />
+              </g>
+              <defs>
+                <clipPath id="a">
+                  <path fill="#fff" d="M.333 0h20v20h-20z" />
+                </clipPath>
+              </defs>
+            </svg> Add to Cart</button>
+            <div class="shop__product-toggler hidden"><button class="shop__product-remove-btn"><i class="fa-solid fa-minus"></i></button> <p class="shop__product-amount" data-amount="1"></p> <button class="shop__product-add-btn"><i class="fa-solid fa-plus"></i></button></div>
+          <p class="shop__product-text">Crème Brûlée</p>
+          <p class="shop__product-name">Vanilla Bean Crème Brûlée</p>
+          <p class="shop__product-price">$7.00</p>
+        </div>
+
+        <div class="shop__product">
+          <picture>
+            <source srcset="./assets/images/image-macaron-mobile.jpg" media="(max-width: 768px)">
+            <img src="./assets/images/image-macaron-desktop.jpg" width="502" height="480" loading="lazy"
+              alt="Macaron Mix of Five">
+          </picture>
+          <button class="shop__product-btn"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" fill="none"
+              viewBox="0 0 21 20">
+              <g fill="#C73B0F" clip-path="url(#a)">
+                <path
+                  d="M6.583 18.75a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5ZM15.334 18.75a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5ZM3.446 1.752a.625.625 0 0 0-.613-.502h-2.5V2.5h1.988l2.4 11.998a.625.625 0 0 0 .612.502h11.25v-1.25H5.847l-.5-2.5h11.238a.625.625 0 0 0 .61-.49l1.417-6.385h-1.28L16.083 10H5.096l-1.65-8.248Z" />
+                <path d="M11.584 3.75v-2.5h-1.25v2.5h-2.5V5h2.5v2.5h1.25V5h2.5V3.75h-2.5Z" />
+              </g>
+              <defs>
+                <clipPath id="a">
+                  <path fill="#fff" d="M.333 0h20v20h-20z" />
+                </clipPath>
+              </defs>
+            </svg> Add to Cart</button>
+            <div class="shop__product-toggler hidden"><button class="shop__product-remove-btn"><i class="fa-solid fa-minus"></i></button> <p class="shop__product-amount" data-amount="1"></p> <button class="shop__product-add-btn"><i class="fa-solid fa-plus"></i></button></div>
+          <p class="shop__product-text">Macaron</p>
+          <p class="shop__product-name">Macaron Mix of Five</p>
+          <p class="shop__product-price">$8.00</p>
+        </div>
+
+        <div class="shop__product">
+          <picture>
+            <source srcset="./assets/images/image-tiramisu-mobile.jpg" media="(max-width: 768px)">
+            <img src="./assets/images/image-tiramisu-desktop.jpg" width="502" height="480" loading="lazy"
+              alt="Classic Tiramisu">
+          </picture>
+          <button class="shop__product-btn"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" fill="none"
+              viewBox="0 0 21 20">
+              <g fill="#C73B0F" clip-path="url(#a)">
+                <path
+                  d="M6.583 18.75a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5ZM15.334 18.75a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5ZM3.446 1.752a.625.625 0 0 0-.613-.502h-2.5V2.5h1.988l2.4 11.998a.625.625 0 0 0 .612.502h11.25v-1.25H5.847l-.5-2.5h11.238a.625.625 0 0 0 .61-.49l1.417-6.385h-1.28L16.083 10H5.096l-1.65-8.248Z" />
+                <path d="M11.584 3.75v-2.5h-1.25v2.5h-2.5V5h2.5v2.5h1.25V5h2.5V3.75h-2.5Z" />
+              </g>
+              <defs>
+                <clipPath id="a">
+                  <path fill="#fff" d="M.333 0h20v20h-20z" />
+                </clipPath>
+              </defs>
+            </svg> Add to Cart</button>
+            <div class="shop__product-toggler hidden"><button class="shop__product-remove-btn"><i class="fa-solid fa-minus"></i></button> <p class="shop__product-amount" data-amount="1"></p> <button class="shop__product-add-btn"><i class="fa-solid fa-plus"></i></button></div>
+          <p class="shop__product-text">Tiramisu</p>
+          <p class="shop__product-name">Classic Tiramisu</p>
+          <p class="shop__product-price">$5.50</p>
+        </div>
+
+        <div class="shop__product">
+          <picture>
+            <source srcset="./assets/images/image-baklava-mobile.jpg" media="(max-width: 768px)">
+            <img src="./assets/images/image-baklava-desktop.jpg" width="502" height="480" loading="lazy"
+              alt="Pistachio Baklava">
+          </picture>
+          <button class="shop__product-btn"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" fill="none"
+              viewBox="0 0 21 20">
+              <g fill="#C73B0F" clip-path="url(#a)">
+                <path
+                  d="M6.583 18.75a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5ZM15.334 18.75a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5ZM3.446 1.752a.625.625 0 0 0-.613-.502h-2.5V2.5h1.988l2.4 11.998a.625.625 0 0 0 .612.502h11.25v-1.25H5.847l-.5-2.5h11.238a.625.625 0 0 0 .61-.49l1.417-6.385h-1.28L16.083 10H5.096l-1.65-8.248Z" />
+                <path d="M11.584 3.75v-2.5h-1.25v2.5h-2.5V5h2.5v2.5h1.25V5h2.5V3.75h-2.5Z" />
+              </g>
+              <defs>
+                <clipPath id="a">
+                  <path fill="#fff" d="M.333 0h20v20h-20z" />
+                </clipPath>
+              </defs>
+            </svg> Add to Cart</button>
+            <div class="shop__product-toggler hidden"><button class="shop__product-remove-btn"><i class="fa-solid fa-minus"></i></button> <p class="shop__product-amount" data-amount="1"></p> <button class="shop__product-add-btn"><i class="fa-solid fa-plus"></i></button></div>
+          <p class="shop__product-text">Baklava</p>
+          <p class="shop__product-name">Pistachio Baklava</p>
+          <p class="shop__product-price">$4.00</p>
+        </div>
+
+        <div class="shop__product">
+          <picture>
+            <source srcset="./assets/images/image-meringue-mobile.jpg" media="(max-width: 768px)">
+            <img src="./assets/images/image-meringue-desktop.jpg" width="502" height="480" loading="lazy"
+              alt="Lemon Meringue Pie">
+          </picture>
+          <button class="shop__product-btn"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" fill="none"
+              viewBox="0 0 21 20">
+              <g fill="#C73B0F" clip-path="url(#a)">
+                <path
+                  d="M6.583 18.75a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5ZM15.334 18.75a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5ZM3.446 1.752a.625.625 0 0 0-.613-.502h-2.5V2.5h1.988l2.4 11.998a.625.625 0 0 0 .612.502h11.25v-1.25H5.847l-.5-2.5h11.238a.625.625 0 0 0 .61-.49l1.417-6.385h-1.28L16.083 10H5.096l-1.65-8.248Z" />
+                <path d="M11.584 3.75v-2.5h-1.25v2.5h-2.5V5h2.5v2.5h1.25V5h2.5V3.75h-2.5Z" />
+              </g>
+              <defs>
+                <clipPath id="a">
+                  <path fill="#fff" d="M.333 0h20v20h-20z" />
+                </clipPath>
+              </defs>
+            </svg> Add to Cart</button>
+            <div class="shop__product-toggler hidden"><button class="shop__product-remove-btn"><i class="fa-solid fa-minus"></i></button> <p class="shop__product-amount" data-amount="1"></p> <button class="shop__product-add-btn"><i class="fa-solid fa-plus"></i></button></div>
+          <p class="shop__product-text">Pie</p>
+          <p class="shop__product-name">Lemon Meringue Pie</p>
+          <p class="shop__product-price">$5.00</p>
+        </div>
+
+        <div class="shop__product">
+          <picture>
+            <source srcset="./assets/images/image-cake-mobile.jpg" media="(max-width: 768px)">
+            <img src="./assets/images/image-cake-desktop.jpg" width="502" height="480" loading="lazy"
+              alt="Red Velvet Cake">
+          </picture>
+          <button class="shop__product-btn"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" fill="none"
+              viewBox="0 0 21 20">
+              <g fill="#C73B0F" clip-path="url(#a)">
+                <path
+                  d="M6.583 18.75a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5ZM15.334 18.75a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5ZM3.446 1.752a.625.625 0 0 0-.613-.502h-2.5V2.5h1.988l2.4 11.998a.625.625 0 0 0 .612.502h11.25v-1.25H5.847l-.5-2.5h11.238a.625.625 0 0 0 .61-.49l1.417-6.385h-1.28L16.083 10H5.096l-1.65-8.248Z" />
+                <path d="M11.584 3.75v-2.5h-1.25v2.5h-2.5V5h2.5v2.5h1.25V5h2.5V3.75h-2.5Z" />
+              </g>
+              <defs>
+                <clipPath id="a">
+                  <path fill="#fff" d="M.333 0h20v20h-20z" />
+                </clipPath>
+              </defs>
+            </svg> Add to Cart</button>
+            <div class="shop__product-toggler hidden"><button class="shop__product-remove-btn"><i class="fa-solid fa-minus"></i></button> <p class="shop__product-amount" data-amount="1"></p> <button class="shop__product-add-btn"><i class="fa-solid fa-plus"></i></button></div>
+          <p class="shop__product-text">Cake</p>
+          <p class="shop__product-name">Red Velvet Cake</p>
+          <p class="shop__product-price">$4.50</p>
+        </div>
+
+        <div class="shop__product">
+          <picture>
+            <source srcset="./assets/images/image-brownie-mobile.jpg" media="(max-width: 768px)">
+            <img src="./assets/images/image-brownie-desktop.jpg" width="502" height="480" loading="lazy"
+              alt="Salted Caramel Brownie">
+          </picture>
+          <button class="shop__product-btn"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" fill="none"
+              viewBox="0 0 21 20">
+              <g fill="#C73B0F" clip-path="url(#a)">
+                <path
+                  d="M6.583 18.75a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5ZM15.334 18.75a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5ZM3.446 1.752a.625.625 0 0 0-.613-.502h-2.5V2.5h1.988l2.4 11.998a.625.625 0 0 0 .612.502h11.25v-1.25H5.847l-.5-2.5h11.238a.625.625 0 0 0 .61-.49l1.417-6.385h-1.28L16.083 10H5.096l-1.65-8.248Z" />
+                <path d="M11.584 3.75v-2.5h-1.25v2.5h-2.5V5h2.5v2.5h1.25V5h2.5V3.75h-2.5Z" />
+              </g>
+              <defs>
+                <clipPath id="a">
+                  <path fill="#fff" d="M.333 0h20v20h-20z" />
+                </clipPath>
+              </defs>
+            </svg> Add to Cart</button>
+            <div class="shop__product-toggler hidden"><button class="shop__product-remove-btn"><i class="fa-solid fa-minus"></i></button> <p class="shop__product-amount" data-amount="1"></p> <button class="shop__product-add-btn"><i class="fa-solid fa-plus"></i></button></div>
+          <p class="shop__product-text">Brownie</p>
+          <p class="shop__product-name">Salted Caramel Brownie</p>
+          <p class="shop__product-price">$5.50</p>
+        </div>
+
+        <div class="shop__product">
+          <picture>
+            <source srcset="./assets/images/image-panna-cotta-mobile.jpg" media="(max-width: 768px)">
+            <img src="./assets/images/image-panna-cotta-desktop.jpg" width="502" height="480" loading="lazy"
+              alt="Vanilla Panna Cotta">
+          </picture>
+          <button class="shop__product-btn"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" fill="none"
+              viewBox="0 0 21 20">
+              <g fill="#C73B0F" clip-path="url(#a)">
+                <path
+                  d="M6.583 18.75a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5ZM15.334 18.75a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5ZM3.446 1.752a.625.625 0 0 0-.613-.502h-2.5V2.5h1.988l2.4 11.998a.625.625 0 0 0 .612.502h11.25v-1.25H5.847l-.5-2.5h11.238a.625.625 0 0 0 .61-.49l1.417-6.385h-1.28L16.083 10H5.096l-1.65-8.248Z" />
+                <path d="M11.584 3.75v-2.5h-1.25v2.5h-2.5V5h2.5v2.5h1.25V5h2.5V3.75h-2.5Z" />
+              </g>
+              <defs>
+                <clipPath id="a">
+                  <path fill="#fff" d="M.333 0h20v20h-20z" />
+                </clipPath>
+              </defs>
+            </svg> Add to Cart</button>
+            <div class="shop__product-toggler hidden"><button class="shop__product-remove-btn"><i class="fa-solid fa-minus"></i></button> <p class="shop__product-amount" data-amount="1"></p> <button class="shop__product-add-btn"><i class="fa-solid fa-plus"></i></button></div>
+          <p class="shop__product-text">Panna Cotta</p>
+          <p class="shop__product-name">Vanilla Panna Cotta</p>
+          <p class="shop__product-price">$6.50</p>
+        </div>
+
+      </div>
+    </div>
+    <div class="shop__cart">
+      <h2 class="shop__cart-info">Your Cart <span class="cart-amount">(0)</span></h2>
+      <img src="./assets/images/illustration-empty-cart.svg" loading="lazy" alt="" class="shop__cart-img">
+      <p class="shop__cart-text">Your added items will appear here</p>
+
+      <ul class="shop__cart-ul">
+        <!-- <li class="shop__cart-li">
+          <div class="shop__cart-li-info">
+            <p class="shop__cart-li-product">Classic Tiramisu</p>
+            <span class="shop__cart-li-quantity">2x</span>
+            <span class="shop__cart-li-basic">@ $5.50</span>
+            <span class="shop__cart-li-price">@ $11.00</span>
+          </div>
+          <button class="shop__cart-li-btn"><i class="fa-solid fa-xmark"></i></button>
+        </li> -->
+      </ul>
+      <div class="shop__cart-order-info hidden">
+        <p class="shop__cart-total">Order Total</p>
+        <p class="shop__cart-order-summary"></p>
+      </div>
+      <div class="shop__cart-carbon-info hidden">
+        <img class="shop__cart-carbon-img" src="./assets/images/icon-carbon-neutral.svg" alt="">
+        <p class="shop__cart-carbon-info-span">This is a <span class="text-bold">carbon-neutral</span> delivery</p>
+      </div>
+      <button class="shop__confirm-btn hidden">Confirm Order</button>
+    </div>
+
+    <div class="popup">
+      <div class="popup__box">
+        <img src="./assets/images/icon-order-confirmed.svg" loading="lazy" alt="">
+        <h3 class="popup__title">Order Confirmed</h3>
+        <p class="popup__text">We hope you enjoy your food!</p>
+
+        <ul class="popup__ul">
+<!--           
+          <li class="popup__li">
+            <img src="./assets/images/image-tiramisu-thumbnail.jpg" width="40" height="40" alt="" class="popup__li-img">
+
+            <div class="popup__li-product-info">
+              <p class="popup__li-product-name">Classic Tiramisu</p>
+              <span class="popup__li-product-quantity">1x</span>
+              <span class="popup__li-product-basic">@ $5.50</span>
+            </div>
+
+            <span class="popup__li-price">$5.50</span>
+
+          </li> -->
+        </ul>
+        <div class="popup__order-info">
+          <p class="popup__order-total">Order Total</p>
+          <p class="popup__order-summary"></p>
+        </div>
+        <button class="popup__btn">Start New Order</button>
+      </div>
+    </div>
+  </section>
+
+  <div class="overlay"></div>
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+  <script src="js/app.js"></script>
+</body>
+
+</html>
