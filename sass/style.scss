@@ -68,15 +68,13 @@ body {
 		position: relative;
 		overflow: hidden;
 
-		
 		&.active .shop__product-toggler {
 			display: flex;
-			animation: fadeIn .3s forwards;
+			animation: fadeIn 0.3s forwards;
 		}
 		&.active img {
 			border: 2px solid var(--accent);
 		}
-
 	}
 	&__product-btn {
 		min-width: fit-content;
@@ -91,7 +89,7 @@ body {
 		padding: 0.8em 1.8em;
 		border-radius: 30px;
 		border: 1px solid var(--rose3);
-		background-color: var(--rose1);
+		background-color: #fff;
 		font-weight: 550;
 		font-size: clamp(1.2rem, 3vw, 1.3rem);
 		cursor: pointer;
@@ -128,7 +126,7 @@ body {
 		flex-direction: column;
 		align-items: flex-start;
 		padding: 2em;
-		background-color: var(--rose1);
+		background-color: #fff;
 		border-radius: 10px;
 		box-shadow: 3px 3px 10px #2e2e2e0e;
 
@@ -142,7 +140,6 @@ body {
 		max-width: 280px;
 		height: auto;
 		margin: 4em 0 2em;
-
 	}
 	&__cart-info {
 		color: var(--accent);
@@ -260,7 +257,8 @@ body {
 		border-radius: 30px;
 		color: var(--rose1);
 	}
-	&__product-remove-btn, &__product-add-btn {
+	&__product-remove-btn,
+	&__product-add-btn {
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -271,9 +269,10 @@ body {
 		border-radius: 50%;
 		border: 1px solid var(--rose1);
 		color: var(--rose1);
-		transition: color .3s, background-color .3s;
+		transition: color 0.3s, background-color 0.3s;
 
-		.fa-plus, .fa-minus {
+		.fa-plus,
+		.fa-minus {
 			pointer-events: none;
 		}
 		&:hover {
@@ -297,7 +296,7 @@ body {
 	width: 100%;
 	max-height: 540px;
 	padding: 2em;
-	background-color: var(--rose1);
+	background-color: #fff;
 	border-radius: 10px;
 	box-shadow: 3px 3px 10px #2e2e2e2e;
 	z-index: 1000;
@@ -341,7 +340,7 @@ body {
 		margin: 2em 0 0;
 		padding: 0 2em;
 		list-style-type: none;
-		background-color: var(--rose2);
+		background-color: #fff;
 		border-radius: 10px 10px 0 0;
 	}
 	&__li {
@@ -380,7 +379,7 @@ body {
 
 	&__order-info {
 		padding: 2em;
-		background-color: var(--rose2);
+		background-color: #fff;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
@@ -505,7 +504,7 @@ body {
 		transform: translate(-50%, -150%);
 
 		&.active {
-			animation: slideDown .5s forwards;
+			animation: slideDown 0.5s forwards;
 		}
 
 		&__btn {
@@ -548,10 +547,10 @@ body {
 		&__cart-text {
 			font-size: 1.2rem;
 		}
-		
-	&__product-toggler {
-		font-size: 1.1rem;
-	}
+
+		&__product-toggler {
+			font-size: 1.1rem;
+		}
 	}
 }
 @media (min-width: 1100px) {
