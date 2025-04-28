@@ -297,7 +297,7 @@ body {
 	max-height: 540px;
 	padding: 2em;
 	background-color: #fff;
-	border-radius: 10px;
+	border-radius: 10px 10px 0 0;
 	box-shadow: 3px 3px 10px #2e2e2e2e;
 	z-index: 1000;
 	overflow-y: auto;
@@ -502,6 +502,7 @@ body {
 		top: 50%;
 		left: 50%;
 		transform: translate(-50%, -150%);
+		border-radius: 10px;
 
 		&.active {
 			animation: slideDown 0.5s forwards;
